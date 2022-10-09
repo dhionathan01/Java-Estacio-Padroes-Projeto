@@ -1,8 +1,8 @@
 
 public class Usuario {
-	String email;
-	String senha;
-	Integer id_usuario;
+	private String email;
+	private String senha;
+	private Integer id_usuario;
 	public String getEmail() {
 		return email;
 	}
