@@ -1,12 +1,19 @@
 
 public class Pessoa {
+	private Integer id_pessoa;
 	private String nome;
 	private String cpf;
 	private String telefone;
 	private String sexo;
 	private String dataNascimento;
-	private Integer id_pessoa;
 	
+	
+	public Integer getId_pessoa() {
+		return id_pessoa;
+	}
+	public void setId_pessoa(Integer id_pessoa) {
+		this.id_pessoa = id_pessoa;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -37,11 +44,6 @@ public class Pessoa {
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
-	public Integer getId_pessoa() {
-		return id_pessoa;
-	}
-	public void setId_pessoa(Integer id_pessoa) {
-		this.id_pessoa = id_pessoa;
-	}
+
 	
 }

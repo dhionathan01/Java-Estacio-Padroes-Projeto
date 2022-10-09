@@ -1,8 +1,15 @@
 
 public class Usuario {
+	private Integer id_usuario;
 	private String email;
 	private String senha;
-	private Integer id_usuario;
+	
+	public Integer getId_usuario() {
+		return id_usuario;
+	}
+	public void setId_usuario(Integer id_usuario) {
+		this.id_usuario = id_usuario;
+	}
 	public String getEmail() {
 		return email;
 	}
@@ -15,10 +22,5 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	public Integer getId_usuario() {
-		return id_usuario;
-	}
-	public void setId_usuario(Integer id_usuario) {
-		this.id_usuario = id_usuario;
-	}
+
 }
