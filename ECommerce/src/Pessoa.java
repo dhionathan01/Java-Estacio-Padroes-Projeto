@@ -7,7 +7,16 @@ public class Pessoa {
 	private String sexo;
 	private String dataNascimento;
 	
+	 Pessoa(Integer id_pessoa, String nome, String cpf, String telefone, String sexo, String dataNascimento){
+		this.id_pessoa = id_pessoa;
+		this.nome = nome;
+		this.cpf = cpf;
+		this.telefone = telefone;
+		this.sexo = sexo;
+		this.dataNascimento = dataNascimento;
+	}
 	
+
 	public Integer getId_pessoa() {
 		return id_pessoa;
 	}
