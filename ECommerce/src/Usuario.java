@@ -21,6 +21,7 @@ public class Usuario  extends Pessoa{
 	}
 	
 	public void exibirInformacoes() {
+		System.out.println("Id: " + this.id_usuario);
 		System.out.println("Email: " + this.email);
 		System.out.println("senha: " + this.senha);
 		System.out.println("Nome: " + this.getNome());

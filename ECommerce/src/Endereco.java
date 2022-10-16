@@ -16,6 +16,7 @@ public class Endereco {
 		setPais(pais);
 	}
 	public void exibirEndereco() {
+		System.out.println("ID Endereco: " + getId_endereco());
 		System.out.println("Rua: " + getRua());
 		System.out.println("Bairro: " + getBairro());
 		System.out.println("Cidade: " + getCidade());

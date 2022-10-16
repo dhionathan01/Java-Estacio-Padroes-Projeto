@@ -29,7 +29,42 @@ public class main {
 		endereco1.exibirEndereco();
 		
 		
+		// Criando produto
+		Produto produto1 = new Produto(
+				1,
+				 "TV 55pol",
+				 "Samsung",
+				 3550.90,
+				 "Eletronico",
+				 "TV Led 55 4k dolby atmos",
+				 "caminhofictiocio/img/TV_Samsung_55_4k_3312"
+				);
 		
+		Produto produto2 = new Produto(
+				2,
+				 "notebook Acer 15.6",
+				 "Acer",
+				 4500.90,
+				 "Eletronico",
+				 "Notebook Acer , processador Ryzen 5 3500u, 16gbRam, Placa de video Radeon 540x",
+				 "caminhofictiocio/img/Notebook Acer"
+				);
+		produto1.exibirProduto();
+		produto2.exibirProduto();
+		Produto[] produtos = new Produto[10];
+		produtos[0] = produto1;
+		produtos[1] = produto2;
+		
+		
+		Pedido pedido1 = new Pedido(
+				  1,
+				  3312,
+				  "Concluído",
+				  produtos
+				);
+		pedido1.setEndereco(endereco1);
+		pedido1.setUsers(user1);
+		pedido1.exibirPedido();
 		
 	}
 
