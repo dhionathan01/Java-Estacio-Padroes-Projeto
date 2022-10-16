@@ -7,6 +7,22 @@ public class Endereco {
 	private String cep;
 	private String pais;
 	
+	Endereco(Integer id_endereco, String rua, String bairro, String cidade, String cep, String pais){
+		setId_endereco(id_endereco);
+		setRua(rua);
+		setBairro(bairro);
+		setCidade(cidade);
+		setCep(cep);
+		setPais(pais);
+	}
+	public void exibirEndereco() {
+		System.out.println("Rua: " + getRua());
+		System.out.println("Bairro: " + getBairro());
+		System.out.println("Cidade: " + getCidade());
+		System.out.println("Cep: " + getCep());
+		System.out.println("Pais: " + getPais());
+		System.out.println("\n");
+	}
 	public Integer getId_endereco() {
 		return id_endereco;
 	}
