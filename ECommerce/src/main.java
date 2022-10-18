@@ -55,6 +55,11 @@ public class main {
 		produtos[0] = produto1;
 		produtos[1] = produto2;
 		
+		FormaEntrega forma1 = new FormaEntrega(1, 56.90,"Sedex", 5);
+		FormaEntrega forma2 = new FormaEntrega(2, 20.90,"CorreiosPadrão", 14);
+		
+		FormaPagamento  pagamento1 = new FormaPagamento(1,"digital","Cartão Credito","3112");
+		FormaPagamento  pagamento2 = new FormaPagamento(2,"fisico","dinheiro","null");
 		
 		Pedido pedido1 = new Pedido(
 				  1,
@@ -64,8 +69,10 @@ public class main {
 				);
 		pedido1.setEndereco(endereco1);
 		pedido1.setUsers(user1);
+		pedido1.setFormaEntrega(forma1);
+		pedido1.setFormaPagamento(pagamento1);
 		pedido1.exibirPedido();
-		
+
 	}
 
 }

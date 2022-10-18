@@ -4,6 +4,8 @@ public class Pedido {
 	private Integer numeroPedido;
 	private String status;
 	private Double valor = 0.0;
+	private FormaPagamento formaPagamento;
+	private FormaEntrega formaEntrega;
 	private Usuario users;
 	private Endereco endereco;
 	private Produto[] produtos;
@@ -43,6 +45,22 @@ public class Pedido {
 	public void setValor(Double valor) {
 		this.valor = valor;
 	}
+	public FormaPagamento getFormaPagamento() {
+		return formaPagamento;
+	}
+
+	public void setFormaPagamento(FormaPagamento formaPagamento) {
+		this.formaPagamento = formaPagamento;
+	}
+
+	public FormaEntrega getFormaEntrega() {
+		return formaEntrega;
+	}
+
+	public void setFormaEntrega(FormaEntrega formaEntrega) {
+		this.formaEntrega = formaEntrega;
+	}
+
 	public Usuario getUsers() {
 		return users;
 	}
@@ -102,7 +120,26 @@ public class Pedido {
 		}else {
 			System.out.println("Endereco de entrega Não definido");
 		}
+	}
 		
+	public void formaEntrega() {
+		FormaEntrega formaEntrega = getFormaEntrega();
+		if(formaEntrega != null) {
+			formaEntrega.exibirFormaEntrega();;
+		}else {
+			System.out.println("Forma de entrega Não definida");
+		}
+	
+	}
+	
+	public void dadosPagamento() {
+		FormaPagamento formaPagamento = getFormaPagamento();
+		if(formaPagamento != null) {
+			formaPagamento.exibirDadosPagamento();
+		}else {
+			System.out.println("Forma de pagamento Não definida");
+		}
+	
 	}
 	
 	public void exibirPedido() {
@@ -115,6 +152,9 @@ public class Pedido {
 		donoPedido();
 		System.out.println("Dados Para Entrega: ");
 		dadosEntrega();
+		System.out.println("Forma de Entrega: ");
+		formaEntrega();
+		System.out.println("\n");
 		System.out.println("Lista de Produtos: ");
 		listaProdutos();
 		

@@ -36,4 +36,12 @@ public class FormaPagamento {
 	public void setGateway(String gateway) {
 		this.gateway = gateway;
 	}
+	
+	public void exibirDadosPagamento() {
+		System.out.println("ID Forma Pagamento: " + getId_formaPagamento());
+		System.out.println("Tipo de Pagamento: " + getTipo());
+		System.out.println("Pagamento Via: " + getNome());
+		System.out.println("Gateway: " + getGateway());
+	}
+		
 }

@@ -37,4 +37,11 @@ public class FormaEntrega {
 	public void setQtdDias(Integer qtdDias) {
 		this.qtdDias = qtdDias;
 	}
+	
+	public void exibirFormaEntrega() {
+		System.out.println("ID Forma Entrega: " + getId_formaEntrega());
+		System.out.println("Forma Entrega:" + getTipo());
+		System.out.println("Preco: " + getValor());
+		System.out.println("Prazo de " + getQtdDias() + " Dias");
+	}
 }
